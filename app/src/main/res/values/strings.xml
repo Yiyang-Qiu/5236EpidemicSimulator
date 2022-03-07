@@ -5,4 +5,8 @@
     <string name="enter_name_hint">Please enter your name</string>
     <string name="Name_text">Name</string>
     <string name="check_button">Check!</string>
+    <string name="start_button">Start</string>
+    <string name="rank_button">Ranking</string>
+    <string name="set_button">Setting</string>
+    <string name="game_title">OSU Epidemic Simulator</string>
 </resources>
