@@ -4,13 +4,17 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class RulesDetailFragment extends Fragment {
-
-
+    static final String TAG = "fragment_rules_detail";
+    private Button mBackButton;
     public RulesDetailFragment() {
         // Required empty public constructor
     }
@@ -28,6 +32,14 @@ public class RulesDetailFragment extends Fragment {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_rules_detail, container, false);
 
+
+
+        mBackButton=(Button)v.findViewById(R.id.back_button);
+        mBackButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                RulesActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container3, new SettingsOptionsFragment(),null).addToBackStack(null).commit();
+            }
+        });
 
 
         return v;
