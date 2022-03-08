@@ -96,6 +96,8 @@ public class MenuFragment extends Fragment {
         mSetButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                Intent intent2=new Intent(getActivity(),SettingsActivity.class);
+                startActivity(intent2);
 
             }});
 

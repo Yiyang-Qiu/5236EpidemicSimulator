@@ -9,4 +9,12 @@
     <string name="rank_button">Ranking</string>
     <string name="set_button">Setting</string>
     <string name="game_title">OSU Epidemic Simulator</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="rules_button">Rules</string>
+    <string name="authors_button">Author Information</string>
+    <string name="events_button">Events Information</string>
+    <string name="quit_button">Quit</string>
+    <string name="back_button">Back</string>
+
 </resources>
