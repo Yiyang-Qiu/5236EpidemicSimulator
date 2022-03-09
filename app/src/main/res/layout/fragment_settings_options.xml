@@ -7,16 +7,14 @@
     android:layout_width="match_parent"
     android:layout_margin="10dp"
     android:layout_gravity="center"
-    android:orientation="vertical"
-    android:padding="144dp">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/settings_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/settings_title"
-        android:textSize="10dp"
-        android:padding="30dp"/>
+        android:textSize="10dp" />
 
     <Button
         android:id="@+id/rules_button"
@@ -24,7 +22,7 @@
         android:layout_height="wrap_content"
         android:text="@string/rules_button"
         android:layout_gravity="center_vertical"
-        android:textSize="8dp"
+        android:textSize="6dp"
         />
     <Button
         android:id="@+id/authors_button"
@@ -32,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="@string/authors_button"
         android:layout_gravity="center_vertical"
-        android:textSize="8dp"/>
+        android:textSize="6dp"/>
 
     <Button
         android:id="@+id/events_button"
@@ -40,7 +38,7 @@
         android:layout_height="wrap_content"
         android:text="@string/events_button"
         android:layout_gravity="center_vertical"
-        android:textSize="8dp"/>
+        android:textSize="6dp"/>
 
     <Button
         android:id="@+id/quit_button"
@@ -48,15 +46,15 @@
         android:layout_height="wrap_content"
         android:text="@string/quit_button"
         android:layout_gravity="center_vertical"
-        android:textSize="8dp"/>
+        android:textSize="6dp"/>
 
     <Button
-        android:id="@+id/back_button"
+        android:id="@+id/backSetting_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/back_button"
         android:layout_gravity="center_vertical"
-        android:textSize="8dp"/>
+        android:textSize="6dp"/>
 
 
 

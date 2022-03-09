@@ -8,10 +8,14 @@ import android.os.Bundle;
 
 public class SettingsActivity extends AppCompatActivity {
 
+    public static FragmentManager fragmentManagersetting;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
+        fragmentManagersetting = getSupportFragmentManager();
 
         FragmentManager fm= getSupportFragmentManager();
         Fragment fragment=fm.findFragmentById(R.id.fragment_container2);
