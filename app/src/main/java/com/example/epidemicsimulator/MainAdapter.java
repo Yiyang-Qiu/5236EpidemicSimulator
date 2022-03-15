@@ -55,7 +55,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
                 MainData d = dataList.get(holder.getAbsoluteAdapterPosition());
                 //get id
                 int sID = d.getID();
-                //gey text
+                //get text
                 String sText = d.getText();
 
                 //create dialog
@@ -69,6 +69,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
                 //set layout
                 dialog.getWindow().setLayout(width,height);
                 //show dialog
+                dialog.show();
                 //Initialize and assign variables
                 EditText editText = dialog.findViewById(R.id.edit_text_in_dialog);
                 Button btUpdate = dialog.findViewById(R.id.bt_update);
