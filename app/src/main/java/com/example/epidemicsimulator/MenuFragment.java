@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -83,12 +84,14 @@ public class MenuFragment extends Fragment {
         mRankButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                FragmentManager fm=getActivity().getSupportFragmentManager();
-                Fragment fragment=new RankFragment();
-                FragmentTransaction transaction=fm.beginTransaction();
-                transaction.replace(R.id.fragment_container1,fragment);
-                transaction.addToBackStack(null);
-                transaction.commit();
+//                FragmentManager fm=getActivity().getSupportFragmentManager();
+//                Fragment fragment=new RankFragment();
+//                FragmentTransaction transaction=fm.beginTransaction();
+//                transaction.replace(R.id.fragment_container1,fragment);
+//                transaction.addToBackStack(null);
+//                transaction.commit();
+                Intent intent1=new Intent(getActivity(),AddRanksActivity.class);
+                startActivity(intent1);
             }});
 
         // Set Button
