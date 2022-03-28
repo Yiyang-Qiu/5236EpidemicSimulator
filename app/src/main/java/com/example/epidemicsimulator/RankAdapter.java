@@ -5,27 +5,25 @@ import android.app.Dialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowAnimationFrameStats;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.MainThread;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
+public class RankAdapter extends RecyclerView.Adapter<RankAdapter.ViewHolder> {
     //initialize variables
     private List<MainData> dataList;
     private Activity context;
     private RoomDB database;
 
     //create constructor
-    public MainAdapter(Activity context, List<MainData> dataList){
+    public RankAdapter(Activity context, List<MainData> dataList){
         this.context = context;
         this.dataList = dataList;
         notifyDataSetChanged();
@@ -52,7 +50,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 //initialize main data
-                MainData d = dataList.get(holder.getAbsoluteAdapterPosition());
+                MainData d = dataList.get(holder.getAdapterPosition());
                 //get id
                 int sID = d.getID();
                 //get text
@@ -100,11 +98,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 //initialize main data
-                MainData d = dataList.get(holder.getAbsoluteAdapterPosition());
+                MainData d = dataList.get(holder.getAdapterPosition());
                 //delete data from database
                 database.mainDao().delete(d);
                 //notify when data is deleted
-                int position = holder.getAbsoluteAdapterPosition();
+                int position = holder.getAdapterPosition();
                 dataList.remove(position);
                 notifyItemRemoved(position);
                 notifyItemRangeChanged(position, dataList.size());

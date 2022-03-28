@@ -3,41 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/activity_blank.xml" value="0.23596014492753623" />
-        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/activity_menu.xml" value="0.1793478260869565" />
-        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/activity_register.xml" value="0.1793478260869565" />
-        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_blank.xml" value="0.23596014492753623" />
-        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_menu.xml" value="0.264" />
-        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_name.xml" value="0.264" />
-        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_rank.xml" value="0.23596014492753623" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1995" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/activity_add_ranks.xml" value="0.33" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/activity_addranks.xml" value="0.16388044579533942" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/activity_menu.xml" value="0.16388044579533942" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/activity_quit.xml" value="0.16388044579533942" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/activity_register.xml" value="0.16388044579533942" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/activity_rules.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/activity_settings.xml" value="0.16388044579533942" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/dialog_update.xml" value="0.3619791666666667" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/fragment_menu.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/fragment_rules_detail.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/fragment_settings_options.xml" value="0.2033514492753623" />
-        <entry key="..\:/Users/90984/StudioProjects/5236EpidemicSimulator/app/src/main/res/layout/list_row_main.xml" value="0.16388044579533942" />
-        <entry key="app/src/main/res/layout/activity_events.xml" value="0.11927083333333334" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_quit.xml" value="0.1157548125633232" />
-        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_rules.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_events_detail.xml" value="0.10520833333333333" />
-        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_name.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_quit_detail.xml" value="0.1157548125633232" />
-        <entry key="app/src/main/res/layout/fragment_quit_detail_alert_dialog.xml" value="0.10891590678824721" />
-        <entry key="app/src/main/res/layout/fragment_rank.xml" value="0.12907608695652173" />
-        <entry key="app/src/main/res/layout/fragment_rules_detail.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_set.xml" value="0.1" />
+        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_menu.xml" value="0.12335359675785208" />
+        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_rank.xml" value="0.12335359675785208" />
+        <entry key="app/src/main/res/layout/activity_game_rules.xml" value="0.2288740706445889" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/layout/activity_rules.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.22916666666666666" />
+        <entry key="app/src/main/res/layout/fragment_game_rules.xml" value="0.22916666666666666" />
+        <entry key="app/src/main/res/layout/fragment_menu.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/layout/fragment_name.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/layout/fragment_rank.xml" value="0.16822916666666668" />
+        <entry key="app/src/main/res/layout/fragment_rules_detail.xml" value="0.17773867135943686" />
         <entry key="app/src/main/res/layout/fragment_settings_options.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/game_rules.xml" value="0.25784655011675844" />
+        <entry key="app/src/main/res/layout/setting_ui.xml" value="0.16510416666666666" />
       </map>
     </option>
   </component>

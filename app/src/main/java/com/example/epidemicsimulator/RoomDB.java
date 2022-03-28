@@ -11,7 +11,7 @@ import androidx.room.RoomDatabase;
 public abstract class RoomDB extends RoomDatabase {
     //create database instances
     private static RoomDB database;
-    MainAdapter adapter;
+    RankAdapter adapter;
 
     //define database name
     private static String DATABASE_NAME = "database";

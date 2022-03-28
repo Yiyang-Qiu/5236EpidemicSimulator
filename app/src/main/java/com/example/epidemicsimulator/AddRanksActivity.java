@@ -3,7 +3,6 @@ package com.example.epidemicsimulator;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.room.RoomDatabase;
 
 
 import android.os.Bundle;
@@ -23,7 +22,7 @@ public class AddRanksActivity extends AppCompatActivity {
     List<MainData> dataList = new ArrayList<>();
     LinearLayoutManager linearLayoutManager;
     RoomDB database;
-    MainAdapter adapter;
+    RankAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +45,7 @@ public class AddRanksActivity extends AppCompatActivity {
         //set layout manager
         recyclerView.setLayoutManager(linearLayoutManager);
         //initialize adapter
-        adapter = new MainAdapter(AddRanksActivity.this,dataList);
+        adapter = new RankAdapter(AddRanksActivity.this,dataList);
         //set adapter
         recyclerView.setAdapter(adapter);
 
