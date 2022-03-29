@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/activity_settings.xml" value="0.1296875" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/dialog_update.xml" value="0.1" />
+        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_events_detail.xml" value="0.13802083333333334" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_menu.xml" value="0.12335359675785208" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_quit_detail.xml" value="0.15104166666666666" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_quit_detail_alert_dialog.xml" value="0.15104166666666666" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_rank.xml" value="0.12335359675785208" />
-        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_settings_options.xml" value="0.1296875" />
+        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_rules_detail.xml" value="0.13802083333333334" />
+        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_settings_options.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_game_rules.xml" value="0.2288740706445889" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.16822916666666668" />

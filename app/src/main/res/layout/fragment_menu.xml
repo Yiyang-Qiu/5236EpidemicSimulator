@@ -8,38 +8,46 @@
     android:layout_margin="10dp"
     android:layout_gravity="center"
     android:orientation="vertical"
+    android:background="@drawable/mainpage"
     >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:padding="30dp"
+        />
 
     <TextView
         android:id="@+id/name_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
         android:text="@string/game_title"
-        android:textSize="10dp"
-        android:layout_gravity="center_vertical"
-        android:padding="30dp"/>
+        android:textColor="@color/purple_700"
+        android:textSize="30dp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/start_button"
-        android:layout_width="match_parent"
+        android:layout_width="106dp"
         android:layout_height="wrap_content"
-        android:text="@string/start_button"
-        android:layout_gravity="center_vertical"
-        />
+        android:layout_gravity="center"
+        android:text="@string/start_button" />
+
     <Button
         android:id="@+id/rank_button"
-        android:layout_width="match_parent"
+        android:layout_width="106dp"
         android:layout_height="wrap_content"
-        android:text="@string/rank_button"
-        android:layout_gravity="center_vertical"/>
+        android:layout_gravity="center"
+        android:text="@string/rank_button" />
 
     <Button
         android:id="@+id/set_button"
-        android:layout_width="match_parent"
+        android:layout_width="106dp"
         android:layout_height="wrap_content"
-        android:text="@string/set_button"
-        android:layout_gravity="center_vertical"/>
-
+        android:layout_gravity="center"
+        android:text="@string/set_button" />
 
 
 </LinearLayout>
