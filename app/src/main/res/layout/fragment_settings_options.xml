@@ -14,46 +14,47 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/settings_title"
-        android:textSize="10dp" />
+        android:textSize="10dp"
+        android:padding="10dp"/>
 
     <Button
         android:id="@+id/rules_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
         android:text="@string/rules_button"
-        android:layout_gravity="center_vertical"
-        android:textSize="6dp"
-        />
+        android:textSize="6dp" />
+
     <Button
         android:id="@+id/authors_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
         android:text="@string/authors_button"
-        android:layout_gravity="center_vertical"
-        android:textSize="6dp"/>
+        android:textSize="6dp" />
 
     <Button
         android:id="@+id/events_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
         android:text="@string/events_button"
-        android:layout_gravity="center_vertical"
-        android:textSize="6dp"/>
+        android:textSize="6dp" />
 
     <Button
         android:id="@+id/quit_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
         android:text="@string/quit_button"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center"
         android:textSize="6dp"/>
 
     <Button
         android:id="@+id/backSetting_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
         android:text="@string/back_button"
-        android:layout_gravity="center_vertical"
+        android:layout_gravity="center"
         android:textSize="6dp"/>
 
 
