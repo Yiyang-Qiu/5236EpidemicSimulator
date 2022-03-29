@@ -11,8 +11,16 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edit_text_addrank"
+        android:id="@+id/edit_text_addRank"
         android:hint="Enter text"
+        android:padding="12dp"
+        android:background="@android:drawable/editbox_background"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_addPoint"
+        android:hint="Enter point"
         android:padding="12dp"
         android:background="@android:drawable/editbox_background"/>
 

@@ -55,6 +55,7 @@ public class RankAdapter extends RecyclerView.Adapter<RankAdapter.ViewHolder> {
                 int sID = d.getID();
                 //get text
                 String sText = d.getText();
+                String sPoint=Integer.toString(d.getPoint());
 
                 //create dialog
                 Dialog dialog =  new Dialog(context);
@@ -68,12 +69,15 @@ public class RankAdapter extends RecyclerView.Adapter<RankAdapter.ViewHolder> {
                 dialog.getWindow().setLayout(width,height);
                 //show dialog
                 dialog.show();
+
                 //Initialize and assign variables
                 EditText editText = dialog.findViewById(R.id.edit_text_in_dialog);
+                EditText editTextPoint = dialog.findViewById(R.id.edit_text_point_in_dialog);
                 Button btUpdate = dialog.findViewById(R.id.bt_update);
 
                 //set text on edit text
                 editText.setText(sText);
+                editTextPoint.setText(sPoint);
 
                 btUpdate.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -82,8 +86,10 @@ public class RankAdapter extends RecyclerView.Adapter<RankAdapter.ViewHolder> {
                         dialog.dismiss();
                         //get updates text from edit text
                         String uText = editText.getText().toString().trim();
+                        int uPoint = Integer.valueOf(editTextPoint.getText().toString().trim());
+
                         //update text in database
-                        database.mainDao().update(sID,uText);
+                        database.mainDao().update(sID,uText,uPoint);
                         //notify when data is updated
                         dataList.clear();
                         dataList.addAll(database.mainDao().getAll());

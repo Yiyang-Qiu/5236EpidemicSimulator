@@ -7,16 +7,18 @@ import androidx.room.PrimaryKey;
 import java.io.Serializable;
 
 //define table name
-@Entity(tableName = "table_name")
+@Entity(tableName = "rank_table")
 public class MainData implements Serializable {
     //Create id Column
     @PrimaryKey(autoGenerate = true)
     private int ID;
 
     //create text column
-    @ColumnInfo(name = "text")
+    @ColumnInfo(name = "player_info")
     private String text;
 
+    @ColumnInfo(name = "point")
+    private int point;
     //getter and setter
 
     public int getID() {
@@ -33,5 +35,13 @@ public class MainData implements Serializable {
 
     public void setText(String text) {
         this.text = text;
+    }
+
+    public int getPoint() {
+        return point;
+    }
+
+    public void setPoint(int point) {
+        this.point = point;
     }
 }

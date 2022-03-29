@@ -15,7 +15,7 @@ import java.util.List;
 
 public class AddRanksActivity extends AppCompatActivity {
     //initialize variables
-    EditText editText;
+    EditText playerText, pointText;
     Button btAdd, btReset;
     RecyclerView recyclerView;
 
@@ -30,7 +30,8 @@ public class AddRanksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_ranks);
 
         //Assign variables
-        editText = findViewById(R.id.edit_text_addrank);
+        playerText = findViewById(R.id.edit_text_addRank);
+        pointText = findViewById(R.id.edit_text_addPoint);
         btAdd = findViewById(R.id.bt_add);
         btReset = findViewById(R.id.bt_reset);
         recyclerView = findViewById(R.id.recycler_view);
@@ -52,19 +53,25 @@ public class AddRanksActivity extends AppCompatActivity {
         btAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // It will be modified after finishing the point counting modules.
+                // The point will be automatically added into database in future sprints
+
                 //Get string from edit text
-                String sText= editText.getText().toString().trim();
+                String sText= playerText.getText().toString().trim();
+                String sText1= pointText.getText().toString().trim();
                 //check condition
                 if(!sText.equals("")){
                     //when text is not empty
                     //initialize main data
                     MainData data = new MainData();
-                    //set text on main data
+                    //set info on main data
                     data.setText(sText);
+                    data.setPoint(Integer.valueOf(sText1));
                     //insert text in database
                     database.mainDao().insert(data);
                     //clear edit text
-                    editText.setText("");
+                    playerText.setText("");
+                    pointText.setText("");
                     //notify when data is inserted
                     dataList.clear();
                     dataList.addAll(database.mainDao().getAll());

@@ -26,11 +26,11 @@ public interface MainDao {
     void reset(List<MainData> mainData);
 
     //update query
-    @Query("UPDATE table_name SET text = :sText WHERE ID = :sID")
-    void update(int sID, String sText);
+    @Query("UPDATE rank_table SET player_info = :sText, point = :sPoint WHERE ID = :sID")
+    void update(int sID, String sText, int sPoint);
 
     //get all data query
-    @Query("SELECT * FROM table_name")
+    @Query("SELECT * FROM rank_table")
     List<MainData> getAll();
 
 

@@ -12,7 +12,16 @@
         android:id="@+id/edit_text_in_dialog"
         android:hint="Enter text"
         android:padding="12dp"
-        android:lines="4"
+        android:lines="2"
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_point_in_dialog"
+        android:hint="Enter Point"
+        android:padding="12dp"
+        android:lines="2"
         android:gravity="top"
         android:background="@android:drawable/editbox_background"/>
 
