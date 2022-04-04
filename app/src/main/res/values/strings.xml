@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Epidemic Simulator</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="item_count">Choose x more items</string>
+    <string name="item_count">Choose #PLACEHOLDER more items</string>
     <string name="enter_name_hint">Please enter your name</string>
     <string name="Name_text">Name</string>
     <string name="check_button">Check!</string>
@@ -33,5 +33,6 @@
     <string name="medicine">Medicine</string>
 
     <string name="hello_blank_fragment">Hello!</string>
+    <string name="item_usage">Number: #PLACEHOLDER. Are you sure to use it? </string>
 
 </resources>

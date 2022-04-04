@@ -24,8 +24,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/weapon"
-        android:id="@+id/weapon_button"
+        android:text="@string/medicine"
+        android:id="@+id/medicine_button"
         android:gravity="center"/>
 
     <Button
@@ -38,8 +38,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/medicine"
-        android:id="@+id/medicine_button"
+        android:text="@string/weapon"
+        android:id="@+id/weapon_button"
         android:gravity="center"/>
 
 </LinearLayout>

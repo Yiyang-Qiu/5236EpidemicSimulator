@@ -14,7 +14,8 @@
         android:gravity="center"
         android:textSize="30dp"
         android:background="@color/purple_700"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:id="@+id/count"/>
 
     <Button
         android:id="@+id/food_button"
