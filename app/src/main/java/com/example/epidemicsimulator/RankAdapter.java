@@ -44,7 +44,8 @@ public class RankAdapter extends RecyclerView.Adapter<RankAdapter.ViewHolder> {
         //initialize database
         database = RoomDB.getInstance(context);
         //set text on text view
-        holder.textView.setText(data.getText());
+        holder.textName.setText("Name: "+data.getText());
+        holder.textPoint.setText("Point: "+Integer.toString(data.getPoint()));
 
         holder.btEdit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -124,13 +125,14 @@ public class RankAdapter extends RecyclerView.Adapter<RankAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         //initialize variables
-        TextView textView;
+        TextView textName,textPoint;
         ImageView btEdit, btDelete;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             //assign variables
-            textView = itemView.findViewById(R.id.text_view_in_list);
+            textName = itemView.findViewById(R.id.text_view_in_list);
+            textPoint = itemView.findViewById(R.id.text_point_in_list);
             btEdit = itemView.findViewById(R.id.bt_edit);
             btDelete = itemView.findViewById(R.id.bt_delete);
 

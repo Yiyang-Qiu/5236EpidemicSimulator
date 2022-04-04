@@ -10,11 +10,18 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp">
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/text_view_in_list"
+            android:textSize="14sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/text_point_in_list"
             android:textSize="14sp"/>
 
         <ImageView

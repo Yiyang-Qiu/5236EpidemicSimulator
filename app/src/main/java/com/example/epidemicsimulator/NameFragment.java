@@ -1,6 +1,7 @@
 package com.example.epidemicsimulator;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
@@ -38,6 +39,7 @@ public class NameFragment extends Fragment {
     private EditText mNameField;
     private Button mCheckButton;
     private SharedPreferences mNameSharedPref;
+    RoomDB database;
 
     public NameFragment() {
         // Required empty public constructor
@@ -78,6 +80,8 @@ public class NameFragment extends Fragment {
 
         Log.d(TAG, "onCreateView(LayoutInflater, ViewGroup, Bundle) called");
 
+
+        database=RoomDB.getInstance(getActivity());
         // Inflate the layout for this fragment
         View v=inflater.inflate(R.layout.fragment_name,container,false);
         mNameField=(EditText) v.findViewById(R.id.input_box);
@@ -113,21 +117,21 @@ public class NameFragment extends Fragment {
         mCheckButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                mNameSharedPref= getActivity().getSharedPreferences("nameData", Context.MODE_PRIVATE);
-                String temp = mNameSharedPref.getString(mName,"NAME_NOT_EXIST");
-                if (temp.equals("NAME_NOT_EXIST")){
+                int count=database.usernameDao().checkUsername(mName);
+//                if (temp.equals("NAME_NOT_EXIST")){
+                if (count==0){
                     // name haven't been used before, store it
-                    mNameSharedPref.edit().putString(mName,"PLACE_HOLDER").apply();   // value doesn't matter here
+                    UsernameData data=new UsernameData();
+                    data.setText(mName);
+                    database.usernameDao().insert(data);
                     Toast.makeText(getActivity(),"Add successfully",Toast.LENGTH_SHORT).show();
                     // TO DO: go to next page!
-
+                    Intent intent1=new Intent(getActivity(),GameActivity.class);
+                    startActivity(intent1);
 
                 }else{
                     Toast.makeText(getActivity(),"This name has been used!",Toast.LENGTH_SHORT).show();
                 }
-
-
-
             }
         });
 

@@ -74,7 +74,9 @@ public class AddRanksActivity extends AppCompatActivity {
                     pointText.setText("");
                     //notify when data is inserted
                     dataList.clear();
-                    dataList.addAll(database.mainDao().getAll());
+                    List<MainData>tempList=database.mainDao().getAll();
+                    RankSorting.sortRank(tempList);
+                    dataList.addAll(tempList);
                     adapter.notifyDataSetChanged();
                 }
             }

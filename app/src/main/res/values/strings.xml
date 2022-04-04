@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Epidemic Simulator</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_count">Choose x more items</string>
     <string name="enter_name_hint">Please enter your name</string>
     <string name="Name_text">Name</string>
     <string name="check_button">Check!</string>
@@ -25,5 +25,13 @@
 5. The woman hovering on the stairs\nYou will request contact with her (certain conditions must be met before she will agree to contact and specific conditions require self-exploration). She wears mask (Even if you don’t wear mask, you can't get infected). If you can reach out to her, you will answer her three choice questions (what is OSU's mascot?... And so on). Answer all correctly and she will be your friend and defend you against the next bandit attack (you can survive unharmed even without a weapon). \n
 6. The creepy snowman suit\nHe wears mask (Even if you don’t wear mask, you can't get infected). Mental health will take a 30% hit because he's so weird! But he will leave you a message from campus police (shortening the number of days it takes for campus police to find you). \n
 "</string>
+
+    <string name="food">Food</string>
+    <string name="water">Water</string>
+    <string name="toy">Toy</string>
+    <string name="weapon">Weapon</string>
+    <string name="medicine">Medicine</string>
+
+    <string name="hello_blank_fragment">Hello!</string>
 
 </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".StartFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/item_count"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:background="@color/purple_700"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/food_button"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/food"/>
+
+    <Button
+        android:id="@+id/drink_button"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/water"/>
+
+    <Button
+        android:id="@+id/medicine_button"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/medicine"/>
+
+    <Button
+        android:id="@+id/toy_button"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/toy"/>
+
+    <Button
+        android:id="@+id/weapon_button"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/weapon"/>
+
+
+</LinearLayout>
