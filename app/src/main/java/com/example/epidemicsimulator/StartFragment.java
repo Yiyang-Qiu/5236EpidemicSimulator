@@ -29,6 +29,9 @@ public class StartFragment extends Fragment {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_start, container, false);
         mPlayer=Player.get(getActivity());  // can be used to get player's health, items, etc...
+        //retrieve username
+        String username=(String)getActivity().getIntent().getStringExtra("USERNAME");
+        mPlayer.setUsername(username);
         count=COUNT;
         text = (TextView)v.findViewById(R.id.count);
         tempText=text.getText().toString();  // Here is the original text in the textview

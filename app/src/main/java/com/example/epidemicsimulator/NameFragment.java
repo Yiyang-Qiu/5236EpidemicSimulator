@@ -127,6 +127,7 @@ public class NameFragment extends Fragment {
                     Toast.makeText(getActivity(),"Add successfully",Toast.LENGTH_SHORT).show();
                     // TO DO: go to next page!
                     Intent intent1=new Intent(getActivity(),GameActivity.class);
+                    intent1.putExtra("USERNAME",mName);
                     startActivity(intent1);
 
                 }else{

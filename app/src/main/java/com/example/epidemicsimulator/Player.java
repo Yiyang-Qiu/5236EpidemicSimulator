@@ -10,6 +10,7 @@ public class Player {
     private static Player sPlayer;
     private int pHealth,mHealth;
     private int drink,weapon,food,toy,medicine;
+    private String username;
 
 
 
@@ -29,6 +30,7 @@ public class Player {
         food=0;
         toy=0;
         medicine=0;
+        username="";
     }
 
     public int getPHealth() {
@@ -85,5 +87,13 @@ public class Player {
 
     public void setMedicine(int medicine) {
         this.medicine = medicine;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 }
