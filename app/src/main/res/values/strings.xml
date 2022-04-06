@@ -34,5 +34,6 @@
 
     <string name="hello_blank_fragment">Hello!</string>
     <string name="item_usage">Number: #PLACEHOLDER. Are you sure to use it? </string>
+    <string name="day_count">Day #PLACEHOLDER</string>
 
 </resources>

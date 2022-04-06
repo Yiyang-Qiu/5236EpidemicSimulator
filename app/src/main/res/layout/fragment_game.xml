@@ -7,6 +7,13 @@
     android:gravity="center"
     tools:context=".GameFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/day_text"
+        android:gravity="center"
+        android:lines="3"
+        android:text="@string/day_count"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,6 +47,20 @@
         android:layout_height="wrap_content"
         android:text="@string/weapon"
         android:id="@+id/weapon_button"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore"
+        android:id="@+id/explore_button"
+        android:gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="End The Day"
+        android:id="@+id/end_button"
         android:gravity="center"/>
 
 </LinearLayout>

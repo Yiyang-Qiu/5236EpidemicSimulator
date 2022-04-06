@@ -1,6 +1,7 @@
 package com.example.epidemicsimulator;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,17 +13,27 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 public class GameFragment extends Fragment {
     private Player mPlayer;
-    Button mFoodButton, mDrinkButton, mWeaponButton, mMedicineButton, mToyButton;
+    Button mFoodButton, mDrinkButton, mWeaponButton, mMedicineButton, mToyButton, mExploreButton, mEndButton;
+    TextView mDayText;
     int buttonFlag; // Detect which button is clicked: 1-food, 2-drink, 3-medicine, 4-toy, 5-weapon
+    int mDay;
+    String tempString;  // Use to store original text
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v =  inflater.inflate(R.layout.fragment_game, container, false);
         mPlayer= Player.get(getActivity());
+        mDay=1; // Initialize. Begin from day 1
+
+        mDayText = (TextView)v.findViewById(R.id.day_text);
+        tempString= mDayText.getText().toString();  // Retrieve the template string (Use to recover)
+        mDayText.setText(ReplaceCharInString.replace(tempString,Integer.toString(mDay))); //replace Day text
 
         mFoodButton = (Button) v.findViewById(R.id.food_button);
         mFoodButton.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +85,46 @@ public class GameFragment extends Fragment {
             }
         });
 
+        mExploreButton=(Button) v.findViewById(R.id.explore_button);
+        mExploreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // To Do: add explore functions
+            }
+        });
+
+        mEndButton = (Button) v.findViewById(R.id.end_button);
+        mEndButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                endDay();
+            }
+        });
+
         return v;
+    }
+
+    private void endDay(){
+        mDay++;
+        mDayText.setText(ReplaceCharInString.replace(tempString,Integer.toString(mDay))); //replace Day text
+
+        // Daily Decrease
+        mPlayer.setPHealth(mPlayer.getPHealth()-10);
+        mPlayer.setMHealth(mPlayer.getMHealth()-10);
+
+        if(mDay==14 || mPlayer.getMHealth()==0 || mPlayer.getPHealth()==0){
+            gameOver();
+        }
+        if(mDay==4 || mDay==7 || mDay==12){
+            EventsHandler.pickEvent(mPlayer); //Events will occur at these days
+        }
+    }
+
+    // Player survives the game
+    private void gameOver(){
+        Intent intent1=new Intent(getActivity(),ScoreActivity.class);
+        intent1.putExtra("DAY",mDay);
+        startActivity(intent1);
     }
 
     private void createDialog(int buttonFlag){

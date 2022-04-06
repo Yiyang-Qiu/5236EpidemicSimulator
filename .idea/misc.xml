@@ -5,6 +5,7 @@
       <map>
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/activity_game.xml" value="0.1703125" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/activity_menu.xml" value="0.10009057971014493" />
+        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/activity_score.xml" value="0.23278985507246377" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/activity_settings.xml" value="0.1296875" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/dialog_item_use.xml" value="0.1" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/dialog_update.xml" value="0.1" />
@@ -16,9 +17,11 @@
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_quit_detail_alert_dialog.xml" value="0.15104166666666666" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_rank.xml" value="0.12335359675785208" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_rules_detail.xml" value="0.13802083333333334" />
+        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_score.xml" value="0.1390625" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_settings_options.xml" value="0.1" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/fragment_start.xml" value="0.1703125" />
         <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/list_row_main.xml" value="0.1703125" />
+        <entry key="..\:/5236project/5236EpidemicSimulator/app/src/main/res/layout/score_fragment.xml" value="0.23278985507246377" />
         <entry key="app/src/main/res/layout/activity_game_rules.xml" value="0.2288740706445889" />
         <entry key="app/src/main/res/layout/activity_menu.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.16822916666666668" />
