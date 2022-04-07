@@ -30,10 +30,10 @@ public class AddRanksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_ranks);
 
         //Assign variables
-        playerText = findViewById(R.id.edit_text_addRank);
-        pointText = findViewById(R.id.edit_text_addPoint);
-        btAdd = findViewById(R.id.bt_add);
-        btReset = findViewById(R.id.bt_reset);
+//        playerText = findViewById(R.id.edit_text_addRank);
+//        pointText = findViewById(R.id.edit_text_addPoint);
+//        btAdd = findViewById(R.id.bt_add);
+//        btReset = findViewById(R.id.bt_reset);
         recyclerView = findViewById(R.id.recycler_view);
 
         //initialize database
@@ -50,48 +50,48 @@ public class AddRanksActivity extends AppCompatActivity {
         //set adapter
         recyclerView.setAdapter(adapter);
 
-        btAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+//        btAdd.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
                 // It will be modified after finishing the point counting modules.
-                // The point will be automatically added into database in future sprints
+                // The point will                //check condition
+                ////                if(!sText.equals("")){
+                ////                    //when text is not empty
+                ////                    //initialize main data
+                ////                    MainData data = new MainData();
+                ////                    //set info on main data
+                ////                    data.setText(sText);
+                ////                    data.setPoint(Integer.valueOf(sText1));
+                ////                    //insert text in database
+                ////                    database.mainDao().insert(data);
+                ////                    //clear edit text
+                ////                    playerText.setText("");
+                ////                    pointText.setText("");
+                ////                    //notify when data is inserted
+                ////                    dataList.clear();
+                ////                    List<MainData>tempList=database.mainDao().getAll();
+                ////                    RankSorting.sortRank(tempList);
+                ////                    dataList.addAll(tempList);
+                ////                    adapter.notifyDataSetChanged();
+                ////                }
+                ////            }
+                ////        });
+                ////
+                ////        btReset.setOnClickListener(new View.OnClickListener() {
+                ////            @Override
+                ////            public void onClick(View view) {
+                ////                //delete all data from database
+                ////                database.mainDao().reset(dataList);
+                ////                //notify when all data deleted
+                ////                dataList.clear();
+                ////                dataList.addAll(database.mainDao().getAll());
+                ////                adapter.notifyDataSetChanged();
+                ////            }
+                ////        }); be automatically added into database in future sprints
 
                 //Get string from edit text
-                String sText= playerText.getText().toString().trim();
-                String sText1= pointText.getText().toString().trim();
-                //check condition
-                if(!sText.equals("")){
-                    //when text is not empty
-                    //initialize main data
-                    MainData data = new MainData();
-                    //set info on main data
-                    data.setText(sText);
-                    data.setPoint(Integer.valueOf(sText1));
-                    //insert text in database
-                    database.mainDao().insert(data);
-                    //clear edit text
-                    playerText.setText("");
-                    pointText.setText("");
-                    //notify when data is inserted
-                    dataList.clear();
-                    List<MainData>tempList=database.mainDao().getAll();
-                    RankSorting.sortRank(tempList);
-                    dataList.addAll(tempList);
-                    adapter.notifyDataSetChanged();
-                }
-            }
-        });
-
-        btReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //delete all data from database
-                database.mainDao().reset(dataList);
-                //notify when all data deleted
-                dataList.clear();
-                dataList.addAll(database.mainDao().getAll());
-                adapter.notifyDataSetChanged();
-            }
-        });
+//                String sText= playerText.getText().toString().trim();
+//                String sText1= pointText.getText().toString().trim();
+//
     }
 }

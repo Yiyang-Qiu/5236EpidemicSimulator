@@ -35,5 +35,7 @@
     <string name="hello_blank_fragment">Hello!</string>
     <string name="item_usage">Number: #PLACEHOLDER. Are you sure to use it? </string>
     <string name="day_count">Day #PLACEHOLDER</string>
+    <string name="game_result">#PLACEHOLDER</string>
+    <string name="score">Your Score is #PLACEHOLDER</string>
 
 </resources>

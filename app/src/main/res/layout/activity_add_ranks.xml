@@ -8,42 +8,42 @@
     android:padding="16dp"
     tools:context=".AddRanksActivity">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edit_text_addRank"
-        android:hint="Enter text"
-        android:padding="12dp"
-        android:background="@android:drawable/editbox_background"/>
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/edit_text_addRank"-->
+<!--        android:hint="Enter text"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@android:drawable/editbox_background"/>-->
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edit_text_addPoint"
-        android:hint="Enter point"
-        android:padding="12dp"
-        android:background="@android:drawable/editbox_background"/>
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/edit_text_addPoint"-->
+<!--        android:hint="Enter point"-->
+<!--        android:padding="12dp"-->
+<!--        android:background="@android:drawable/editbox_background"/>-->
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="8dp">
-                
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:id="@+id/bt_add"
-                        android:text="Add"/>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_marginTop="8dp">-->
+<!--                -->
+<!--                    <Button-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/bt_add"-->
+<!--                        android:text="Add"/>-->
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:id="@+id/bt_reset"
-                        android:text="Reset"/>
-            </LinearLayout>
+<!--                    <Button-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/bt_reset"-->
+<!--                        android:text="Reset"/>-->
+<!--            </LinearLayout>-->
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"

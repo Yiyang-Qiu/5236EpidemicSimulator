@@ -33,6 +33,17 @@ public class Player {
         username="";
     }
 
+    public void reset(){
+        pHealth=100;
+        mHealth=100;
+        drink=0;
+        weapon=0;
+        food=0;
+        toy=0;
+        medicine=0;
+        username="";
+    }
+
     public int getPHealth() {
         return pHealth;
     }
