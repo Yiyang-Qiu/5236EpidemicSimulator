@@ -16,14 +16,69 @@
     <string name="events_button">Events Information</string>
     <string name="quit_button">Quit</string>
     <string name="back_button">Back</string>
-    <string name="body">" As the game starts, you will have five options from which you can choose three. This represents the three categories of supplies you harvested on your way back to your apartment at the start of the pandemic. You only get limited resources. Every day you pass in the game, your physical and mental health drops by 20%. If either of the two reaches 0%, you will die. You can restore physical health (food and water) using the supplies you gain. You can also interact with the items you get (sleep, radio, books...), maybe it will help your mental health. Don't try to escape reality by sleeping. The psychological benefits of sleep are limited. The truly brave one will find another way.\n       The Ohio State University police will come to your rescue. But it might take them 14 days to find you. You need to stay alive when the campus police arrive. Besides, all communications equipment was cut off and permanently unavailable at the start of the outbreak. The only thing you can use is a radio you might get at Caldwell lab. The radio will occasionally hear messages from campus police.\n       You may encounter different events. The impact of each event is different. It all depends on whether you want to turn on the event or not. (events here means you probably can get some resources or some helpers (some buffs))\n       You can use the map to go out and explore. Each exploration will cost 10% of your physical and mental health. You may find something to gain from your exploration. (here we probably use google map or some other hardware like Gyro as our sensor)\n      If you are still alive after 14 days, you will be rescued by the campus police and end 1. If you die within 14 days, you'll have Ending 2 right away. The game has multiple endings (methods of death) waiting for your exploration. "</string>
+    <string name="body">
+        " As the game starts, you will have five options from which you can choose three.
+        This represents the three categories of supplies you harvested on your way back to
+        your apartment at the start of the pandemic. You only get limited resources.
+        Every day you pass in the game, your physical and mental health drops by 20%.
+        If either of the two reaches 0%, you will die. You can restore physical health
+        (food and water) using the supplies you gain. You can also interact with the items you get
+        (sleep, radio, books…), maybe it will help your mental health.
+        Don't try to escape reality by sleeping. The psychological benefits of sleep are limited.
+        The truly brave one will find another way.\n
+        The Ohio State University police will come to your rescue.
+        But it might take them 14 days to find you.
+        You need to stay alive when the campus police arrive.
+        Besides, all communications equipment was cut off and permanently unavailable
+        at the start of the outbreak. The only thing you can use is a radio
+        you might get at Caldwell lab. The radio will occasionally hear messages from campus police.\n
+        You may encounter different events. The impact of each event is different.
+        It all depends on whether you want to turn on the event or not.
+        (events here means you probably can get some resources or some helpers (some buffs))\n
+        You can use the map to go out and explore.
+        Each exploration will cost 10% of your physical and mental health.
+        You may find something to gain from your exploration.
+        (here we probably use google map or some other hardware like Gyro as our sensor)\n
+        If you are still alive after 14 days, you will be rescued by the campus police and end
+        1. If you die within 14 days, you'll have Ending 2 right away. The game has multiple endings
+        (methods of death) waiting for your exploration. "</string>
 
-    <string name="body2">"1. The masked man who takes from the rich and gives to the poor\nHe will ask to make contact with you. He wears mask (Even if you don’t wear mask, you can't get infected). If your supplies (food and drink) are short, he will send you supplies. If you're rich, he'll take everything you have. \n
-2. Neighbors with material woes\nHe will ask for your help. No mask (If you don’t wear mask, you could be infected). You can treat him with a medical kit and use supplies to keep him alive. If he recovers, he will send you other precious things (radio, weapons,......) . If you die, you get nothing. \n
-3. A wandering golden retriever\nIt will ask for your help. Since it's a dog, you can't get infected even if it's not wearing a mask or you don’t wear mask. If you keep feeding it and keeping it, it will go out and explore for you (you don't have to spend health for its explorations). \n
-4. A ferocious robber\nInevitable event! Pick up your weapon and fight! No mask (If you don’t wear mask, you could be infected). If you have a weapon and your health is above 70%, bandits will be beaten back and you will get some of their supplies. If you are armed but have less than 70% health, the bandit will tie you. If you are unarmed, robbers will take everything you own and have a chance to hurt you. \n
-5. The woman hovering on the stairs\nYou will request contact with her (certain conditions must be met before she will agree to contact and specific conditions require self-exploration). She wears mask (Even if you don’t wear mask, you can't get infected). If you can reach out to her, you will answer her three choice questions (what is OSU's mascot?... And so on). Answer all correctly and she will be your friend and defend you against the next bandit attack (you can survive unharmed even without a weapon). \n
-6. The creepy snowman suit\nHe wears mask (Even if you don’t wear mask, you can't get infected). Mental health will take a 30% hit because he's so weird! But he will leave you a message from campus police (shortening the number of days it takes for campus police to find you). \n
+    <string name="body2">
+        "1. The masked man who takes from the rich and gives to the poor\nHe will ask
+        to make contact with you. He wears mask (Even if you don’t wear mask, you can't get infected).
+        If your supplies (food and drink) are short, he will send you supplies.
+        If you're rich, he'll take everything you have. \n
+
+        2. Neighbors with material woes\nHe will ask for your help.
+        No mask (If you don’t wear mask, you could be infected).
+        You can treat him with a medical kit and use supplies to keep him alive.
+        If he recovers, he will send you other precious things (radio, weapons,......) .
+        If you die, you get nothing. \n
+
+        3. A wandering golden retriever\nIt will ask for your help.
+        Since it's a dog, you can't get infected even if it's not wearing a mask or you don’t wear mask.
+        If you keep feeding it and keeping it, it will go out and explore for you
+        (you don't have to spend health for its explorations). \n
+
+        4. A ferocious robber\nInevitable event! Pick up your weapon and fight!
+        No mask (If you don’t wear mask, you could be infected).
+        If you have a weapon and your health is above 70%, bandits will be beaten back and you will get some of their supplies.
+        If you are armed but have less than 70% health, the bandit will tie you.
+        If you are unarmed, robbers will take everything you own and have a chance to hurt you. \n
+
+        5. The woman hovering on the stairs\n
+        You will request contact with her (certain conditions must be met before she will agree to contact
+        and specific conditions require self-exploration).
+        She wears mask (Even if you don’t wear mask, you can't get infected).
+        If you can reach out to her, you will answer her three choice questions
+        (what is OSU's mascot?... And so on).
+        Answer all correctly and she will be your friend and defend you against
+        the next bandit attack (you can survive unharmed even without a weapon). \n
+
+        6. The creepy snowman suit\nHe wears mask (Even if you don’t wear mask, you can't get infected).
+        Mental health will take a 30% hit because he's so weird!
+        But he will leave you a message from campus police
+        (shortening the number of days it takes for campus police to find you). \n
 "</string>
 
     <string name="food">Food</string>
@@ -37,5 +92,7 @@
     <string name="day_count">Day #PLACEHOLDER</string>
     <string name="game_result">#PLACEHOLDER</string>
     <string name="score">Your Score is #PLACEHOLDER</string>
+    <string name="event1">A strange man appears. He checks the resources that you have.
+        The man then decides to #PLACEHOLDER</string>
 
 </resources>

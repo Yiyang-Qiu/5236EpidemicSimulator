@@ -11,6 +11,7 @@ public class Player {
     private int pHealth,mHealth;
     private int drink,weapon,food,toy,medicine;
     private String username;
+    private boolean hasMask;
 
 
 
@@ -31,6 +32,7 @@ public class Player {
         toy=0;
         medicine=0;
         username="";
+        hasMask=false;
     }
 
     public void reset(){
@@ -106,5 +108,13 @@ public class Player {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public boolean isHasMask() {
+        return hasMask;
+    }
+
+    public void setHasMask(boolean hasMask) {
+        this.hasMask = hasMask;
     }
 }

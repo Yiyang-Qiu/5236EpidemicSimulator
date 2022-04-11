@@ -115,9 +115,9 @@ public class GameFragment extends Fragment {
         if(mDay==14 || mPlayer.getMHealth()==0 || mPlayer.getPHealth()==0){
             gameOver();
         }
-        if(mDay==4 || mDay==7 || mDay==12){
-            EventsHandler.pickEvent(mPlayer); //Events will occur at these days
-        }
+//        if(mDay==4 || mDay==7 || mDay==12){
+//            EventsHandler.pickEvent(mPlayer,getActivity()); //Events will occur at these days
+//        }
     }
 
     // Player survives the game
@@ -140,6 +140,7 @@ public class GameFragment extends Fragment {
         dialog.getWindow().setLayout(width,height);
         //show dialog
         dialog.show();
+
         //Initialize and assign variables
         TextView mText = dialog.findViewById(R.id.item_number_text);
         Button mUseButton = dialog.findViewById(R.id.bt_use);

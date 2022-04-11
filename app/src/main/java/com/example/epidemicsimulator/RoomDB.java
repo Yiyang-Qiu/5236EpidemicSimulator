@@ -7,7 +7,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 //Add database entities
-@Database(entities = {MainData.class,UsernameData.class},version = 1,exportSchema = false)
+@Database(entities = {MainData.class,UsernameData.class,EventData.class},version = 1,exportSchema = false)
 public abstract class RoomDB extends RoomDatabase {
     //create database instances
     private static RoomDB database;
@@ -29,4 +29,5 @@ public abstract class RoomDB extends RoomDatabase {
     //create Dao
     public abstract MainDao mainDao();
     public abstract UsernameDao usernameDao();
+    public abstract EventDao eventDao();
 }
