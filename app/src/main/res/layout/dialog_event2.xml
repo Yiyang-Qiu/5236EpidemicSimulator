@@ -24,15 +24,15 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/bt_use"
-            android:text="USE"
+            android:id="@+id/bt_give"
+            android:text="GIVE"
             android:layout_marginTop="8dp"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/bt_cancel"
-            android:text="CANCEL"
+            android:id="@+id/bt_refuse"
+            android:text="REFUSE"
             android:layout_marginTop="8dp"/>
 
     </LinearLayout>
