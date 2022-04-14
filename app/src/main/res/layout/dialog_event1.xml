@@ -4,26 +4,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="8dp">
+    android:layout_margin="8dp"
+    android:background="@drawable/eventbackground">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/event_title"
-        android:text="EVENTS"
-        android:padding="12dp"
-        android:lines="2"
-        android:gravity="center"
-        android:background="@android:drawable/editbox_background"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/event_descrip"
         android:text="@string/event1"
         android:padding="12dp"
-        android:lines="2"
+        android:lines="3"
         android:gravity="center"
         android:background="@android:drawable/editbox_background"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/event_outcome"
+        android:text="@string/event1outcome"
+        android:padding="12dp"
+        android:lines="3"
+        android:gravity="center"
+        android:background="@android:drawable/editbox_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/bt_backcase1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="BACK" />
+
+    </LinearLayout>
 
 
 </LinearLayout>

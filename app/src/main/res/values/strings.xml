@@ -81,6 +81,20 @@
         (shortening the number of days it takes for campus police to find you). \n
 "</string>
 
+    <string name="bodyAuthor">
+        "
+        \n
+        Hanxiang Jiang\n
+        A senior student majoring in CSE from The Ohio State University. He is one of the developers of this app.\n
+        Yiyang Qiu\n
+        A senior student majoring in CIS from The Ohio State University. He is one of the developers of this app.\n
+        Yu Xiong\n
+        A senior student majoring in CIS from The Ohio State University. She is one of the developers of this app.\n
+        Yuwen Zhao\n
+        A master student of design in The Glasgow School of Art. She provides all the original pictures of this app.\n
+
+"</string>
+
     <string name="food">Food</string>
     <string name="water">Water</string>
     <string name="toy">Toy</string>
@@ -88,11 +102,31 @@
     <string name="medicine">Medicine</string>
 
     <string name="hello_blank_fragment">Hello!</string>
-    <string name="item_usage">Number: #PLACEHOLDER. Are you sure to use it? </string>
+    <string name="item_usage">Please consider your options carefully.\nNumber: #PLACEHOLDER. Are you sure to use it? </string>
+
     <string name="day_count">Day #PLACEHOLDER</string>
+    <string name="mental_health_count">Mental Health: #PLACEHOLDER%</string>
+    <string name="physical_health_count">Physical Health: #PLACEHOLDER%</string>
+
     <string name="game_result">#PLACEHOLDER</string>
     <string name="score">Your Score is #PLACEHOLDER</string>
+
     <string name="event1">A strange man appears. He checks the resources that you have.
         The man then decides to #PLACEHOLDER</string>
+    <string name="event1outcome">You obtained #PLACEHOLDER</string>
+    <string name="event2">Your neighbors do not have a lot of supplies. He is asking you to
+        medicate him.\n
+        Do you want to help him?</string>
+    <string name="event3">A band of robbers came to your door.
+        They decide to force their way into your room. Use your weapon to defeat them!</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
 </resources>

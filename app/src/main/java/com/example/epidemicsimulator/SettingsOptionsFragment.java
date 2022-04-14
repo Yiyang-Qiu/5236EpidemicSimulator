@@ -15,6 +15,7 @@ import android.widget.Button;
 public class SettingsOptionsFragment extends Fragment {
 
     private Button mRulesButton;
+    private Button mAuthorsButton;
     private Button mEventsButton;
     private Button mQuitButton;
     private Button mBackButton;
@@ -46,6 +47,15 @@ public class SettingsOptionsFragment extends Fragment {
                 startActivity(intent3);
             }});
 
+        // Authors Button
+        mAuthorsButton=(Button)v.findViewById(R.id.authors_button);
+        mAuthorsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent7=new Intent(getActivity(),AuthorsActivity.class);
+                startActivity(intent7);
+            }});
+
         // Events Button
         mEventsButton=(Button)v.findViewById(R.id.events_button);
         mEventsButton.setOnClickListener(new View.OnClickListener(){
@@ -56,13 +66,13 @@ public class SettingsOptionsFragment extends Fragment {
             }});
 
         // Quit Button
-        mQuitButton=(Button)v.findViewById(R.id.quit_button);
-        mQuitButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent5=new Intent(getActivity(),QuitActivity.class);
-                startActivity(intent5);
-            }});
+        //mQuitButton=(Button)v.findViewById(R.id.quit_button);
+        //mQuitButton.setOnClickListener(new View.OnClickListener(){
+        //    @Override
+        //    public void onClick(View view) {
+        //        Intent intent5=new Intent(getActivity(),QuitActivity.class);
+        //        startActivity(intent5);
+        //    }});
 
         // Back Button
         mBackButton=(Button)v.findViewById(R.id.backSetting_button);

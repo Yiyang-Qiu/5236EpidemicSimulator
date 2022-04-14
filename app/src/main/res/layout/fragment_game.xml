@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/gamehomepage"
     tools:context=".GameFragment">
 
     <TextView
@@ -14,12 +15,29 @@
         android:gravity="center"
         android:lines="3"
         android:text="@string/day_count"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mental_health_text"
+        android:gravity="center"
+        android:lines="3"
+        android:text="@string/mental_health_count"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/physical_health_text"
+        android:gravity="center"
+        android:lines="3"
+        android:text="@string/physical_health_count"/>
+
     <Button
+        android:id="@+id/food_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/food"
-        android:id="@+id/food_button"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:text="@string/food" />
 
     <Button
         android:layout_width="wrap_content"

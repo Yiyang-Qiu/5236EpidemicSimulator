@@ -4,14 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
+import java.util.ArrayList;
+
 public class MenuActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
         FragmentManager fm= getSupportFragmentManager();
         Fragment fragment=fm.findFragmentById(R.id.fragment_container1);
         if(fragment==null){

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/background2"
     tools:context=".StartFragment">
 
     <TextView
@@ -16,6 +17,7 @@
         android:background="@color/purple_700"
         android:textColor="@color/white"
         android:id="@+id/count"/>
+
 
     <Button
         android:id="@+id/food_button"

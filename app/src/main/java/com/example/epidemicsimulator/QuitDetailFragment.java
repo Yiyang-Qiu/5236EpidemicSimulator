@@ -9,12 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class QuitDetailFragment extends Fragment {
 
     private Button mQuitButton;
     private Button mBackButton;
+
 
 
     public QuitDetailFragment() {
@@ -33,6 +35,7 @@ public class QuitDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_quit_detail, container, false);
+
 
         mQuitButton=(Button)v.findViewById(R.id.quitDialog_button);
         mQuitButton.setOnClickListener(new View.OnClickListener() {

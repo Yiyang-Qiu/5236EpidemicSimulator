@@ -20,9 +20,14 @@ public class GameFragment extends Fragment {
     private Player mPlayer;
     Button mFoodButton, mDrinkButton, mWeaponButton, mMedicineButton, mToyButton, mExploreButton, mEndButton;
     TextView mDayText;
+    TextView mMentalHealthText;
+    TextView mPhysicalHealthText;
     int buttonFlag; // Detect which button is clicked: 1-food, 2-drink, 3-medicine, 4-toy, 5-weapon
     int mDay;
     String tempString;  // Use to store original text
+
+    String mentalHealthString, physicalHealthString;
+    int mentalChange, physicalChange;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,9 +36,20 @@ public class GameFragment extends Fragment {
         mPlayer= Player.get(getActivity());
         mDay=1; // Initialize. Begin from day 1
 
+        // day
         mDayText = (TextView)v.findViewById(R.id.day_text);
         tempString= mDayText.getText().toString();  // Retrieve the template string (Use to recover)
         mDayText.setText(ReplaceCharInString.replace(tempString,Integer.toString(mDay))); //replace Day text
+        // mental health
+        mMentalHealthText = (TextView)v.findViewById(R.id.mental_health_text);
+        mentalHealthString= mMentalHealthText.getText().toString();  // Retrieve the template string (Use to recover)
+        mentalChange=mPlayer.getMHealth();
+        mMentalHealthText.setText(ReplaceCharInString.replace(mentalHealthString,Integer.toString(mentalChange)));
+        // physical health
+        mPhysicalHealthText = (TextView)v.findViewById(R.id.physical_health_text);
+        physicalHealthString= mPhysicalHealthText.getText().toString();  // Retrieve the template string (Use to recover)
+        physicalChange=mPlayer.getPHealth();
+        mPhysicalHealthText.setText(ReplaceCharInString.replace(physicalHealthString,Integer.toString(physicalChange)));
 
         mFoodButton = (Button) v.findViewById(R.id.food_button);
         mFoodButton.setOnClickListener(new View.OnClickListener() {
@@ -90,6 +106,7 @@ public class GameFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 // To Do: add explore functions
+                ExploreHandler.startExploration(mPlayer,getActivity());
             }
         });
 
@@ -109,15 +126,30 @@ public class GameFragment extends Fragment {
         mDayText.setText(ReplaceCharInString.replace(tempString,Integer.toString(mDay))); //replace Day text
 
         // Daily Decrease
+        // physical & mental decrease
         mPlayer.setPHealth(mPlayer.getPHealth()-10);
         mPlayer.setMHealth(mPlayer.getMHealth()-10);
+
+        // Update Health Status
+        physicalChange=mPlayer.getPHealth();
+        if(physicalChange>=100){
+            mPlayer.setPHealth(100);
+        }
+        mPhysicalHealthText.setText(ReplaceCharInString.replace(physicalHealthString,Integer.toString(physicalChange)));
+
+        mentalChange=mPlayer.getMHealth();
+        if(mentalChange>=100){
+            mPlayer.setMHealth(100);
+        }
+        mMentalHealthText.setText(ReplaceCharInString.replace(mentalHealthString,Integer.toString(mentalChange)));
+
 
         if(mDay==14 || mPlayer.getMHealth()==0 || mPlayer.getPHealth()==0){
             gameOver();
         }
-//        if(mDay==4 || mDay==7 || mDay==12){
-//            EventsHandler.pickEvent(mPlayer,getActivity()); //Events will occur at these days
-//        }
+        if(mDay==4 || mDay==7 || mDay==12){
+            EventsHandler.pickEvent(mPlayer,getActivity()); //Events will occur at these days
+        }
     }
 
     // Player survives the game
@@ -168,11 +200,21 @@ public class GameFragment extends Fragment {
             public void onClick(View view) {
                 dialog.dismiss();
                 switch (buttonFlag){
-                    case 1: mPlayer.setFood(mPlayer.getFood()-1);break;
-                    case 2: mPlayer.setDrink(mPlayer.getDrink()-1);break;
-                    case 3: mPlayer.setMedicine(mPlayer.getMedicine()-1);break;
-                    case 4: mPlayer.setToy(mPlayer.getToy()-1);break;
-                    case 5: mPlayer.setWeapon(mPlayer.getWeapon()-1);break;
+                    case 1: mPlayer.setFood(mPlayer.getFood()-1);
+                            mPlayer.setPHealth(mPlayer.getPHealth()+10);
+                            break;
+                    case 2: mPlayer.setDrink(mPlayer.getDrink()-1);
+                            mPlayer.setPHealth(mPlayer.getPHealth()+10);
+                            break;
+                    case 3: mPlayer.setMedicine(mPlayer.getMedicine()-1);
+                            mPlayer.setInfected(false);
+                            break;
+                    case 4: mPlayer.setToy(mPlayer.getToy()-1);
+                            mPlayer.setPHealth(mPlayer.getMHealth()+10);
+                            break;
+                    case 5: mPlayer.setWeapon(mPlayer.getWeapon()-1);
+                            // add more details about robber event!
+                            break;
                 }
                 mText.setText(tempString); // recover to the template
                 Toast.makeText(getActivity(),"Use Successfully",Toast.LENGTH_SHORT).show();

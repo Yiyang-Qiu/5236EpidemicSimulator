@@ -5,15 +5,18 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class SettingsActivity extends AppCompatActivity {
 
     public static FragmentManager fragmentManagersetting;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
+
 
         fragmentManagersetting = getSupportFragmentManager();
 

@@ -9,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EpidemicSimulator">
+
+        <activity
+            android:name=".AuthorsActivity"
+            android:exported="false" />
         <activity
             android:name=".GameActivity"
             android:exported="false" />
         <activity
             android:name=".AddRanksActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".QuitActivity"
             android:exported="false" />
@@ -39,10 +43,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ScoreActivity"
-            android:exported="true">
-
-        </activity>
+        <activity
+            android:name=".ScoreActivity"
+            android:exported="true" />
     </application>
 
 </manifest>

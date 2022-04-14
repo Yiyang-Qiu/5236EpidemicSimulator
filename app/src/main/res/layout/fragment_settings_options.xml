@@ -41,13 +41,17 @@
         android:text="@string/events_button"
         android:textSize="6dp" />
 
-    <Button
+    <!--    <Button
         android:id="@+id/quit_button"
         android:layout_width="110dp"
         android:layout_height="35dp"
         android:text="@string/quit_button"
         android:layout_gravity="center"
         android:textSize="6dp"/>
+
+        -->
+
+
 
     <Button
         android:id="@+id/backSetting_button"

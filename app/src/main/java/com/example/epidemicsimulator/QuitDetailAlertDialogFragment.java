@@ -2,6 +2,7 @@ package com.example.epidemicsimulator;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.fragment.app.DialogFragment;
@@ -23,10 +24,26 @@ public class QuitDetailAlertDialogFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder dg = new AlertDialog.Builder(getActivity());
-        dg.setTitle("Do you really want to quit the Epidemic Simulator?").setPositiveButton(android.R.string.ok,null);
-        dg.setNegativeButton(android.R.string.no,null);
+        dg.setTitle("Do you really want to quit the Epidemic Simulator?").setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+                // kill the app
+
+
+            }
+        });
+        dg.setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+                // nothing will happen
+            }
+        });
         return dg.create();
 
     }
+
+
 
 }
