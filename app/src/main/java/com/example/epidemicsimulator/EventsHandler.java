@@ -7,6 +7,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.security.SecureRandom;
 
 import java.util.Random;
 
@@ -18,7 +19,7 @@ public class EventsHandler {
     public static void pickEvent(Player mPlayer, Activity activity){
         RoomDB database = RoomDB.getInstance(activity);
         int eventNum=database.eventDao().getCount();
-        Random random=new Random();
+        Random random=new SecureRandom();
         EventData event = database.eventDao().getEvent(random.nextInt(eventNum)+1);  //randomly pick an event
         //EventData event = database.eventDao().getEvent(1);
         TextView mEventTitle, mEventDescription;
